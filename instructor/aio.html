@@ -76,7 +76,9 @@
       Building Websites With Jekyll and GitHub
     </div>
     <div class="search-icon-sm">
+      <!-- TODO: do not show until we have search
       <i role="img" aria-label="search button" data-feather="search"></i>
+      -->
     </div>
     <div class="desktop-nav">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -105,8 +107,12 @@
       </ul>
 </div>
     <form class="d-flex col-md-2 search-form">
-      <input class="form-control me-2 searchbox" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-success tablet-search-button" type="submit"><i class="search-icon" data-feather="search" role="img" aria-label="search button"></i></button>
-    </form>
+      <fieldset disabled>
+<input class="form-control me-2 searchbox" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-success tablet-search-button" type="submit">
+          <i class="search-icon" data-feather="search" role="img" aria-label="search button"></i>
+        </button>
+      </fieldset>
+</form>
   </div>
 <!--/div.container-fluid -->
 </nav><div class="col-md-12 mobile-title">
@@ -160,7 +166,7 @@
 
               <button id="chapters" class="accordion-button show" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
                 <h2 class="accordion-header chapters" id="flush-headingEleven">
-                  CHAPTERS
+                  EPISODES
                 </h2>
               </button>
               <div id="flush-collapseEleven" class="accordion-collapse show collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlush11">
@@ -759,7 +765,7 @@ This is one reason it is a preferred language for formatted user input on web si
   Example Solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>For example your markdown might look like the following:</p>
 <div class="codewrapper sourceCode" id="cb3">
@@ -1257,7 +1263,7 @@ This is one reason it is a preferred language for formatted user input on web si
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Add parameter twitter to <code>_config.yml</code>:</li>
@@ -1337,7 +1343,7 @@ This is one reason it is a preferred language for formatted user input on web si
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>For instance, a missing closing quote <code>"</code> in the <code>twitter</code> variable.</p>
 <div class="codewrapper sourceCode" id="cb6">
@@ -1439,7 +1445,7 @@ This is one reason it is a preferred language for formatted user input on web si
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Create a YAML header at the very top of <code>index.md</code> and add the <code>lesson-example</code> variable in between the triple-dash delimiters. You can then reference the value within your <code>index.md</code> page as <code>{% raw %}{{{% endraw %} page.lesson-example {% raw %}}}{% endraw %}</code>. Your file should now look like:</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -1490,7 +1496,7 @@ This is one reason it is a preferred language for formatted user input on web si
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The place where you used the undefined variable is blank but otherwise no error. Example:</li>
@@ -1622,7 +1628,7 @@ This is one reason it is a preferred language for formatted user input on web si
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The Software Sustainability Institute website reuses many structural elements, such as the <strong>page header</strong> (containing the “top menu,” the institute’s logo, links to social media, etc) and <strong>footer</strong> (containing copyright and licensing information, links to the privacy policy and accessibility statement, a form to subscribe to the institute’s newsletter, etc). Elsewhere, blocks of text and images are reused in the main body of multiple pages, e.g. blog and news posts all end with a description of how the reader can contact the SSI to discuss the content.</p>
 <p>The DiverseKids site has the same kind of shared header and footer on each page: this is a common theme across most websites, helping to improve navigation and other aspects of the user experience and achieve consistent “branding” across the whole site. The books listed under each category include a title, a price, and cover image. The category links themselves are also shared across each page, probably generated from the existing categories of books in the collection, and updated automatically when a category is added or removed.</p>
@@ -1709,7 +1715,7 @@ This is one reason it is a preferred language for formatted user input on web si
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Insert the <code>include</code> directive at the top of <code>about.md</code> so that it now looks as follows:</p>
 <div class="codewrapper sourceCode" id="cb3">
@@ -1795,7 +1801,7 @@ This is one reason it is a preferred language for formatted user input on web si
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li><p>Create a file called <code>footer.html</code> inside the <code>_includes</code> folder to contain the footer HTML snippet.</p></li>
@@ -2857,7 +2863,7 @@ Then in the box that reads “Find or create a branch” type <code>gh-pages</co
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The description and name variables are site-wide variables so they are found in the <code>_config.yml</code> file and can be updated there. Changes are then committed and the site can be reloaded after Github re-renders the latest version of the site with Jekyll.</p>
 </div>
@@ -2883,7 +2889,7 @@ Then in the box that reads “Find or create a branch” type <code>gh-pages</co
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Lines 12-20 need to be removed from the <code>_includes/menu-header.html</code> file.</p>
 </div>
@@ -2912,7 +2918,7 @@ Then in the box that reads “Find or create a branch” type <code>gh-pages</co
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Lines 81-105 need to be removed to remove the newsletter.</li>
@@ -2945,7 +2951,7 @@ Then in the box that reads “Find or create a branch” type <code>gh-pages</co
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The <code>About</code> page is called <code>about.md</code> and is in the <code>_pages</code> folder. Once found in the yaml header the variables can be changed to “page” for layout and “false” for comments. In the body of the page the line that starts with “Made with” is removed.</li>
@@ -2976,7 +2982,7 @@ Then in the box that reads “Find or create a branch” type <code>gh-pages</co
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>The authors collection is found in the <code>_config.yml</code>. A new entry can be made by copying lines 22-28, pasting them on line 38, and then customizing them.</p>
 </div>
@@ -3002,7 +3008,7 @@ Then in the box that reads “Find or create a branch” type <code>gh-pages</co
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <ul>
 <li>Add a new file to the <code>_posts</code> folder with the filename <code>YYYY-MM-DD-some-key-info.md</code>.</li>
@@ -3033,7 +3039,7 @@ Then in the box that reads “Find or create a branch” type <code>gh-pages</co
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <p>For this change we need to first sort the collection and assign the sorted collection to a variable. Then use that sorted collection variable in the for loop when we display the authors.</p>
 <p>In the <code>_pages/author-list.html</code> file add the line <code>{% raw %}{% assign sorted_authors = site.authors | sort "name" %}{% endraw %}</code> right before the <code>{% raw %}{% for author in site.authors %}{% endraw %}</code> line. Then change that line to <code>{% raw %}{% for author in sorted_authors %}{% endraw %}</code>.</p>
@@ -3103,9 +3109,9 @@ Then in the box that reads “Find or create a branch” type <code>gh-pages</co
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.5.8" class="external-link">sandpaper (0.5.8)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.0" class="external-link">sandpaper (0.6.0)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.1.14" class="external-link">varnish (0.1.14)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.0" class="external-link">varnish (0.2.0)</a>.</p>
 			</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -3127,8 +3133,8 @@ Then in the box that reads “Find or create a branch” type <code>gh-pages</co
   "url": "https://fishtree-attempt.github.io/jekyll-pages-novice/instructor/aio.html",
   "identifier": "https://fishtree-attempt.github.io/jekyll-pages-novice/instructor/aio.html",
   "dateCreated": "2022-05-31",
-  "dateModified": "2022-06-07",
-  "datePublished": "2022-06-07"
+  "dateModified": "2022-06-14",
+  "datePublished": "2022-06-14"
 }
 
   </script><script>
