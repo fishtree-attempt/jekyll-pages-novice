@@ -1,30 +1,41 @@
 ---
-layout: lesson
-root: .  # Is the only page that doesn't follow the pattern /:path/index.html
-permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
+permalink: index.html
+site: sandpaper::sandpaper_site
 ---
 
-> ## Looking for Beta Testers!
-> **We are currently looking for volunteers to test this lesson!**
-> If you would like to teach this lesson in a pilot workshop,
-> please let the lesson developers know by
-> [opening a new issue on the lesson repository](https://github.com/carpentries-incubator/jekyll-pages-novice/issues/new)
-> or posting to the [`#jekyll-pages-lesson` Slack channel](https://swcarpentry.slack.com/archives/C0186GK56UC)
-> on [The Carpentries Slack](https://swc-slack-invite.herokuapp.com/).
-> We would love to help you prepare to teach the lesson and
-> receive feedback on how it could be further improved,
-> based on your experience in the workshop.
-{: .testimonial }
+> **ATTENTION** This is an experimental test of [The Carpentries Workbench](https://carpentries.github.io/workbench) lesson infrastructure.
+> It was automatically converted from the source lesson via [the lesson transition script](https://github.com/carpentries/lesson-transition/).
+> 
+> If anything seems off, please contact Zhian Kamvar [zkamvar@carpentries.org](mailto:zkamvar@carpentries.org)
 
-> ## Prerequisites
->
-> This lesson guides you through making websites using Jekyll in a web hosting service GitHub Pages.
-> If you are comfortable interacting with websites in a web browser, this lesson is for you. Basic understanding
-> of HTML and/or Markdown as webpage authoring languages is welcome but not a must.
->
-> There may be additional prerequisites for individual lessons in the extras section.
->
-{: .prereq }
+::::::::::::::::::::::::::::::::::::  testimonial
+
+## Looking for Beta Testers!
+
+**We are currently looking for volunteers to test this lesson!**
+If you would like to teach this lesson in a pilot workshop,
+please let the lesson developers know by
+[opening a new issue on the lesson repository](https://github.com/carpentries-incubator/jekyll-pages-novice/issues/new)
+or posting to the [`#jekyll-pages-lesson` Slack channel](https://swcarpentry.slack.com/archives/C0186GK56UC)
+on [The Carpentries Slack](https://swc-slack-invite.herokuapp.com/).
+We would love to help you prepare to teach the lesson and
+receive feedback on how it could be further improved,
+based on your experience in the workshop.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::  prereq
+
+## Prerequisites
+
+This lesson guides you through making websites using Jekyll in a web hosting service GitHub Pages.
+If you are comfortable interacting with websites in a web browser, this lesson is for you. Basic understanding
+of HTML and/or Markdown as webpage authoring languages is welcome but not a must.
+
+There may be additional prerequisites for individual lessons in the extras section.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 For those already familiar with the ways that Git
 and an online platform like GitHub
@@ -41,19 +52,23 @@ However, for those taking their first steps towards building sites like this,
 the process can be confusing and intimidating.
 This tutorial aims to address this,
 by providing a step-by-step guide to creating a collection of pages
-and combining them into a coherent site using a framework called _Jekyll_.
+and combining them into a coherent site using a framework called *Jekyll*.
 
-> ## Outdated Screenshots
->
-> Throughout this lesson we will make use and show content and screenshots from GitHub.com.
-> As an ever evolving platform, GitHub is always adding new features
-> and new visual elements to its website.
-> **Screenshots** in the lesson may then become out-of-sync, refer or show content that no longer exists.
->
-> If during the lesson you find **screenshots** that no longer match what you see in your browser,
-> please [open an issue][github-jekyll-issues] describing what you see and how it differs from the lesson content.
-> Feel free to add as many screenshots as necessary to clarify the discrepancy.
-{: .callout }
+::::::::::::::::::::::::::::::::::::::::  callout
+
+## Outdated Screenshots
+
+Throughout this lesson we will make use and show content and screenshots from GitHub.com.
+As an ever evolving platform, GitHub is always adding new features
+and new visual elements to its website.
+**Screenshots** in the lesson may then become out-of-sync, refer or show content that no longer exists.
+
+If during the lesson you find **screenshots** that no longer match what you see in your browser,
+please [open an issue][github-jekyll-issues] describing what you see and how it differs from the lesson content.
+Feel free to add as many screenshots as necessary to clarify the discrepancy.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Target Audience
 
@@ -87,16 +102,20 @@ An still needs to finish writing her thesis and doesn't have a lot of time to sp
 This lesson will teach An how to find and use an existing template to create her personal webpage and online CV,
 how to write formatted text and insert images to highlight the skills she has picked up, and how to host those pages online for free.
 
-> ## Learning Objectives
->
-> After following this lesson,
-> learners will be able to:
->
-> - **create** formatted page content with Markdown
-> - **configure** their project to build and serve pages on GitHub
-> - **build** a coherent site with multiple pages using the Jekyll framework
-> - **customise** the layout and style of the pages on their site
->
-{: .objectives }
+:::::::::::::::::::::::::::::::::::::  objectives
 
-{% include links.md %}
+## Learning Objectives
+
+After following this lesson,
+learners will be able to:
+
+- **create** formatted page content with Markdown
+- **configure** their project to build and serve pages on GitHub
+- **build** a coherent site with multiple pages using the Jekyll framework
+- **customise** the layout and style of the pages on their site
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+

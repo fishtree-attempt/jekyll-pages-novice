@@ -1,23 +1,26 @@
 ---
-title: "Page Layouts"
+title: Page Layouts
 teaching: 30
 exercises: 25
-questions:
-- "How can I design the layout for all pages on my site?"
-- "Where can I find pre-built themes for my site?"
-- "How can I create new layouts based on those I already have?"
-objectives:
-- "Apply a template layout to a page"
-- "Find and implement pre-existing themes to determine the style of a site"
-- "Create new page templates that inherit from existing layouts"
-keypoints:
-- "Files in the `_layouts/` directory can be used as page templates"
-- "The structure of a page is determined by the `layout` field in the page front matter"
-- "You can find many pre-existing themes for sites on the Internet"
-- "You can avoid duplicated effort by basing new layouts on previous ones"
 ---
 
-{% include base_path.html %}
+
+
+::::::::::::::::::::::::::::::::::::::: objectives
+
+- Apply a template layout to a page
+- Find and implement pre-existing themes to determine the style of a site
+- Create new page templates that inherit from existing layouts
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: questions
+
+- How can I design the layout for all pages on my site?
+- Where can I find pre-built themes for my site?
+- How can I create new layouts based on those I already have?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Elements that will appear on every page across our website,
 like the banner image we included in our pages in the previous section,
@@ -27,7 +30,7 @@ these structural elements do not change from page to page.
 As such, although the `include` tags reduce the pain endured when
 adjusting that repeated content,
 it is not good practice to `include` the same content over and over again.
-This structure can instead be defined within the _layout_ of the pages of the site.
+This structure can instead be defined within the *layout* of the pages of the site.
 
 Common elements found in a layout are
 logos,
@@ -51,10 +54,9 @@ which we will save in a file `_layouts/default.html`.
 Having defined our navigational links in a separate file,
 we will start with a layout file that only includes these links:
 
-~~~
+```markdown 
 {% raw %}{% include navigation.html %}{% endraw %}
-~~~
-{: .language-markdown }
+```
 
 You have just defined the first layout for pages on your site.
 Congratulations!
@@ -70,12 +72,11 @@ the bad: all the other page content has disappeared!
 The page content is missing because we haven't yet told Jekyll where to put it.
 To do that we need to add the special `content` variable into the layout file:
 
-~~~
+```markdown 
 {% raw %}{% include navigation.html %}{% endraw %}
 
 {% raw %}{{ content }}{% endraw %}
-~~~
-{: .language-markdown }
+```
 
 We can use the `content` variable to tell Jekyll where it should place
 **all the content defined in the Markdown of the page** within this layout.
@@ -85,48 +86,59 @@ we now see the page content has returned but we have two more problems:
 the styling of our pages has changed (for the worse) and
 the navigational links appear twice!
 
-![A page displaying the navigation section twice.](../fig/layouts_double_navigation.png){: .image-with-shadow width="800px" }
+![](fig/layouts_double_navigation.png){alt='A page displaying the navigation section twice.' .image-with-shadow width="800px" }
 
 The duplication is happening because the
 `{% raw %}{% include navigation.html %}{% endraw %}`
 tag is still present in `index.md`.
 
-> ## Exercise: Cleaning Up
->
-> Remove the include tag for navigation links from all the pages of your site (e.g. `about.md`),
-> and set every page to use the `default` layout.
->
-{: .challenge }
+::::::::::::::::::::::::::::::::::::::  challenge
+
+## Exercise: Cleaning Up
+
+Remove the include tag for navigation links from all the pages of your site (e.g. `about.md`),
+and set every page to use the `default` layout.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Now that we have cleaned the duplicated navigation links, we may want to add another element to our layout. In a similar manner
 to the navigation links appearing on every page, we may want a common footer to appear too.
 
-> ## Exercise: Expanding the Layout
->
-> Expand the layout we have just created to include a footer element at the bottom defined in `_includes/footer.html`
->so that it appears at the end of each page that uses this layout.
->
-> > ## Solution
-> > Include the footer file in the `_layouts/default.html` layout file as follows:
-> >
-> > ~~~
-> > {% raw %}{% include navigation.html %}
-> >
-> > {{ content }}
-> >
-> > {% include footer.html %}{% endraw %}
-> > ~~~
-> > {: .language-html }
-> >
-> > Remove all references to `footer.html` from pages as they will now be included via the layout.
-> > Check that this works by reloading any of the pages that use the `default` layout. You should see a footer at
-> > the bottom of the page.
-> {: .solution }
-{: .challenge }
+::::::::::::::::::::::::::::::::::::::  challenge
+
+## Exercise: Expanding the Layout
+
+Expand the layout we have just created to include a footer element at the bottom defined in `_includes/footer.html`
+so that it appears at the end of each page that uses this layout.
+
+::::::::::::::  solution
+
+## Solution
+
+Include the footer file in the `_layouts/default.html` layout file as follows:
+
+```html 
+{% raw %}{% include navigation.html %}
+
+{{ content }}
+
+{% include footer.html %}{% endraw %}
+```
+
+Remove all references to `footer.html` from pages as they will now be included via the layout.
+Check that this works by reloading any of the pages that use the `default` layout. You should see a footer at
+the bottom of the page.
+
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## HTML Structure, Metadata and a Default Layout
+
 Before we defined a layout for our pages,
-Jekyll used a _default theme_ to style the site.
+Jekyll used a *default theme* to style the site.
 That default has been overwritten now that we applied a layout file
 to our site and that means,
 if we want to use our own customised layouts,
@@ -135,8 +147,8 @@ There is still more to learn about page layouts,
 so we will come back to this issue of styling at the end of the episode.
 
 You might recall from
-[the introduction]({{ relative_root_path }}{% link _episodes/introduction.md %}#hello-world-in-html)
-to this tutorial, that a _valid_ HTML page consists of more than
+[the introduction]({{ relative\_root\_path }}{% link \_episodes/introduction.md %}#hello-world-in-html)
+to this tutorial, that a *valid* HTML page consists of more than
 only the content we want to display.
 We haven't written these extra elements (`<html>`, `<head>`, `<meta>`, etc)
 in our layout file: but there are some advantages to defining these yourself:
@@ -159,38 +171,42 @@ It is common practice to define the structural HTML elements of your site's page
 inside a `_layouts/default.html` file.
 This file defines the bare minimum layout your pages should have.
 
-> ## Exercise: Adding HTML Structural Elements to Default Layout
->
-> Modify the default layout file `_layouts/default.html` with the following content:
->
-> ~~~
-> {% raw %}<!doctype html>
-> <html lang="en">
->   <head>
->     <meta charset="utf-8">
->     <title>{{ page.title }}</title>
->   </head>
->   <body>
->     {% include navigation.html %}
->     <h1>{{ page.title }}</h1>
->     <section>
->       {{ content }}
->     </section>
->     {% include footer.html %}
->   </body>
-> </html>{% endraw %}
-> ~~~
-> {: .language-html }
->
-> What do you notice has changed about the pages that use this layout?
->
-> > ## Solution
-> >
-> > After updating the layout,
-> > each page includes the page title displayed twice.
-> >
-> {: .solution }
-{: .challenge }
+::::::::::::::::::::::::::::::::::::::  challenge
+
+## Exercise: Adding HTML Structural Elements to Default Layout
+
+Modify the default layout file `_layouts/default.html` with the following content:
+
+```html 
+{% raw %}<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    {% include navigation.html %}
+    <h1>{{ page.title }}</h1>
+    <section>
+      {{ content }}
+    </section>
+    {% include footer.html %}
+  </body>
+</html>{% endraw %}
+```
+
+What do you notice has changed about the pages that use this layout?
+
+::::::::::::::  solution
+
+## Solution
+
+After updating the layout,
+each page includes the page title displayed twice.
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Note that we have also included some additional HTML elements in our default layout - the display of the
 page title as level-one heading and wrapping the main page content within `<section>` and `</section>` tags.
@@ -207,7 +223,7 @@ the Markdown content of our pages and instead define the title
 in the page front matter.
 For example, `about.md` should look like this after the change:
 
-~~~
+```markdown 
 ---
 layout: default
 title: About
@@ -226,8 +242,7 @@ We gratefully acknowledge funding from the XYZ Founding Council, under grant num
 You can cite the project as:
 
 >    *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
-~~~
-{: .language-markdown }
+```
 
 ## Layout Inheritance
 
@@ -236,7 +251,7 @@ we define for a site,
 Jekyll allows for layouts to be based on other layouts,
 which can be based on other layouts,
 and so on.
-This is referred to as _layout inheritance_,
+This is referred to as *layout inheritance*,
 and is refreshingly easy to use.
 
 For example, let's say we want to create a slightly different
@@ -245,48 +260,46 @@ To do so, we first need to upload a banner image to our repository and create a 
 `_includes/banner.html` to include the banner image:
 
 1. To add a pre-made banner image, click "Create new file" under the "Add file"
-dropdown on your repository homepage,
+  dropdown on your repository homepage,
 2. In the "Name your file..." box, type `images/`.
-   The folder name should be automatically inserted in the path displayed
-   next to this box for naming the file. It is good practice to store all image files in a common folder.
+  The folder name should be automatically inserted in the path displayed
+  next to this box for naming the file. It is good practice to store all image files in a common folder.
 3. You can then leave the file blank and name it `.gitkeep`.
-   When you commit the changes, the `images` folder will have been
-   added to your repository. We will be uploading our banner image to this folder in a moment.
-   Unfortunately GitHub does not provide a way to create a new folder
-   while uploading existing files, only while creating new ones.
-   When making these blank files,
-   which exist only to allow the existence of their parent repository,
-   it is traditional to call them `.gitkeep`.
+  When you commit the changes, the `images` folder will have been
+  added to your repository. We will be uploading our banner image to this folder in a moment.
+  Unfortunately GitHub does not provide a way to create a new folder
+  while uploading existing files, only while creating new ones.
+  When making these blank files,
+  which exist only to allow the existence of their parent repository,
+  it is traditional to call them `.gitkeep`.
 4. Now [download this banner image that we will add to our pages][banner-image]
-   save it with the name `site_banner.png` and
-   upload the file to your newly-created `images` folder on GitHub:
-   you can do this by navigating into the folder and choosing
-   "Upload files" from the "Add file" dropdown you used before.
+  save it with the name `site_banner.png` and
+  upload the file to your newly-created `images` folder on GitHub:
+  you can do this by navigating into the folder and choosing
+  "Upload files" from the "Add file" dropdown you used before.
 
 Now that the banner image is available in our site repository,
 add the HTML file `_includes/banner.html` with the following content:
 
-~~~
+```html 
 <img src="./images/site_banner.png" alt="Group Website banner">
-~~~
-{: .language-html }
+```
 
 Next, we need to create a new layout file `_layouts/home.html` and then
 set it to inherit from the default layout by adding YAML front matter
 specifying the `layout` (of the layout file) to be `default`.
 
-~~~
+```html 
 {% raw %}---
 layout: default
 ---{% endraw %}
-~~~
-{: .language-html }
+```
 
 We can then add any extentions to the new layout `home.html`
 that will be applied on top of the default layout.
 This is what `_layouts/home.html` file should look like:
 
-~~~
+```html 
 {% raw %}---
 layout: default
 ---
@@ -294,21 +307,25 @@ layout: default
 {% include banner.html %}
 
 {{ content }}{% endraw %}
-~~~
-{: .language-html }
+```
 
-> ## Defining a Layout for a Layout
-> Note how layouts can be applied not only to regular pages but
-> also to other layouts, effectively making a layout
-> inherit from another layout.
-{: .callout }
+::::::::::::::::::::::::::::::::::::::::  callout
+
+## Defining a Layout for a Layout
+
+Note how layouts can be applied not only to regular pages but
+also to other layouts, effectively making a layout
+inherit from another layout.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Finally, we can now update the layout of the home page to be `home` instead of `default` by modifying the YAML front matter.
 If you reload the home page now,
 you should now see that it has all of the structure provided in `default` layout
 as well as the banner image included from the `home` layout.
 
-![Home page with inherited layout](../fig/layouts_homepage_layout.png){: .image-with-shadow width="800px" }
+![](fig/layouts_homepage_layout.png){alt='Home page with inherited layout' .image-with-shadow width="800px" }
 
 The purpose of this approach, defining the core structure that will be common
 to every page across the site in a default layout,
@@ -318,27 +335,29 @@ Whenever we want to update something about the styling or structure of our site,
 we should only need to make that change in a single file and let it propagate
 to all the relevant pages.
 
-> ## We Can't Include Link References in the Layout
->
-> In the previous section,
-> [we recommended that you `include` a file of references]({{ relative_root_path }}{% link _episodes/includes.md %}#reusing-link-references)
-> for the links on your site.
-> Unfortunately, you cannot add this `{% raw %}{% include links.md %}{% endraw %}`
-> tag to the default layout of your site to prevent you from needing to
-> add it at the bottom of every page.
-> This is a result of [the order of Jekyll's rendering process][jekyll-rendering],
-> which constructs the HTML of the page content in isolation
-> _before_ constructing the HTML of the relevant layout(s) and nesting it inside.
-> If the link references are included in the layout rather than the content,
-> those references will not be available while the content is converted to HTML
-> and the links will not render correctly.
-> It is annoying to have to remember to add
-> `{% raw %}{% include links.md %}{% endraw %}`
-> to the end of every page's Markdown,
-> but less annoying than having to manually edit the same link reference in
-> multiple locations throughout the site.
->
-{: .callout}
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## We Can't Include Link References in the Layout
+
+In the previous section,
+[we recommended that you `include` a file of references]({{ relative\_root\_path }}{% link \_episodes/includes.md %}#reusing-link-references)
+for the links on your site.
+Unfortunately, you cannot add this `{% raw %}{% include links.md %}{% endraw %}`
+tag to the default layout of your site to prevent you from needing to
+add it at the bottom of every page.
+This is a result of [the order of Jekyll's rendering process][jekyll-rendering],
+which constructs the HTML of the page content in isolation
+*before* constructing the HTML of the relevant layout(s) and nesting it inside.
+If the link references are included in the layout rather than the content,
+those references will not be available while the content is converted to HTML
+and the links will not render correctly.
+It is annoying to have to remember to add
+`{% raw %}{% include links.md %}{% endraw %}`
+to the end of every page's Markdown,
+but less annoying than having to manually edit the same link reference in
+multiple locations throughout the site.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Using Pre-Existing Layouts From a Theme
 
@@ -367,4 +386,15 @@ Reusing pre-existing themes designed by professional web designers helps you
 focus more on the **content** of your site, which you can write using
 more user-friendly and human-readable Markdown.
 
-{% include links.md %}
+
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+- Files in the `_layouts/` directory can be used as page templates
+- The structure of a page is determined by the `layout` field in the page front matter
+- You can find many pre-existing themes for sites on the Internet
+- You can avoid duplicated effort by basing new layouts on previous ones
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
