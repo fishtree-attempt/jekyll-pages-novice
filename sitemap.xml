@@ -10,6 +10,9 @@
     <loc>https://preview.carpentries.org/jekyll-pages-novice/about.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/jekyll-pages-novice/aio.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/jekyll-pages-novice/arrays.html</loc>
   </url>
   <url>
@@ -31,6 +34,9 @@
     <loc>https://preview.carpentries.org/jekyll-pages-novice/guide.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/jekyll-pages-novice/images.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/jekyll-pages-novice/includes.html</loc>
   </url>
   <url>
@@ -44,6 +50,9 @@
   </url>
   <url>
     <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor/about.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor/aio.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor/arrays.html</loc>
@@ -67,13 +76,22 @@
     <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor/guide.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor/includes.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor/index.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor/layouts.html</loc>
@@ -103,7 +121,13 @@
     <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor/wrap-up.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/jekyll-pages-novice/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/jekyll-pages-novice/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/jekyll-pages-novice/key-points.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/jekyll-pages-novice/layouts.html</loc>
