@@ -517,7 +517,7 @@ web][www-wikipedia].</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">HTML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -652,7 +652,7 @@ sections</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <ul>
 <li><ol style="list-style-type: decimal">
@@ -1029,7 +1029,7 @@ to your <code>README.md</code>:</p>
   Example Solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>For example your markdown might look like the following:</p>
 <div class="codewrapper sourceCode" id="cb3">
@@ -2255,7 +2255,7 @@ common type(s) of content that is being reused in these sites?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The Software Sustainability Institute website reuses many structural
 elements, such as the <strong>page header</strong> (containing the “top
@@ -2405,7 +2405,7 @@ page.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Insert the <code>include</code> directive at the top of
 <code>about.md</code> so that it now looks as follows:</p>
@@ -2522,7 +2522,7 @@ section from <code>about.md</code> to avoid repetition).</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li><p>Create a file called <code>footer.html</code> inside the
@@ -3539,7 +3539,7 @@ team changes.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Luckily, we keep all our global settings in <code>_config.yml</code>
 so all we have to do is update the values there. This saved us some work
@@ -3749,7 +3749,7 @@ each post in the list.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <pre class="source"><code>{% raw %}{% for post in site.blogposts %}
 - {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url }}) by {{ post.author }}
@@ -3781,7 +3781,7 @@ again the end of <code>index.md</code>.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Create a new file, <code>_includes/post_list.html</code>, with the
 following content:</p>
@@ -3822,7 +3822,7 @@ collection. Check that your new post appears in the list.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Write another post Markdown file and save it into the
 <code>_blogposts</code> folder, making sure you remember to add (at
@@ -4237,7 +4237,7 @@ episode</a> for review</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The description and name variables are site-wide variables so they
 are found in the <code>_config.yml</code> file and can be updated there.
@@ -4269,7 +4269,7 @@ section for more information about where to find the header menu.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Lines 12-20 need to be removed from the
 <code>_includes/menu-header.html</code> file.</p>
@@ -4302,7 +4302,7 @@ this lesson for more information on layouts.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Lines 81-105 need to be removed to remove the newsletter.</li>
@@ -4345,7 +4345,7 @@ page.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The <code>About</code> page is called <code>about.md</code> and is
@@ -4390,7 +4390,7 @@ reminder on where you might find the authors collection.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>The authors collection is found in the <code>_config.yml</code>. A
 new entry can be made by copying lines 22-28, pasting them on line 38,
@@ -4423,7 +4423,7 @@ the Wild section as it tells you more about how to use the built-in
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <ul>
 <li>Add a new file to the <code>_posts</code> folder with the filename
@@ -4463,7 +4463,7 @@ solution.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <p>For this change we need to first sort the collection and assign the
 sorted collection to a variable. Then use that sorted collection
@@ -4588,8 +4588,8 @@ professional-looking websites.</li>
   "url": "https://preview.carpentries.org/jekyll-pages-novice/aio.html",
   "identifier": "https://preview.carpentries.org/jekyll-pages-novice/aio.html",
   "dateCreated": "2022-11-15",
-  "dateModified": "2023-02-21",
-  "datePublished": "2023-02-21"
+  "dateModified": "2023-02-28",
+  "datePublished": "2023-02-28"
 }
 
   </script><script>
