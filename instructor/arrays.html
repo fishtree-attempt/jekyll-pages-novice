@@ -397,12 +397,12 @@ on lines indented twice to the right, with pairs of keys and values. The
 keys - <code>name</code>, <code>role</code>, and <code>start_date</code>
 - are identical for all entries in the list but the values differ from
 one team member to the next.</p>
-<div id="callout1" class="callout callout">
+<div id="yaml-syntax-is-flexible" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="yaml-syntax-is-flexible" class="callout-inner">
-<h3 class="callout-title">YAML Syntax Is Flexible<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">YAML Syntax Is Flexible<a class="anchor" aria-label="anchor" href="#yaml-syntax-is-flexible"></a>
 </h3>
 <div class="callout-content">
 <p>When browsing documentation and examples of YAML you will sometimes
@@ -428,12 +428,12 @@ described in the official YAML specification][yaml-lists].</p>
 </div>
 </div>
 </div>
-<div id="callout2" class="callout callout">
+<div id="indentation-in-yaml" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="indentation-in-yaml" class="callout-inner">
-<h3 class="callout-title">Indentation in YAML<a class="anchor" aria-label="anchor" href="#callout2"></a>
+<h3 class="callout-title">Indentation in YAML<a class="anchor" aria-label="anchor" href="#indentation-in-yaml"></a>
 </h3>
 <div class="callout-content">
 <p>Note that indentation level in YAML is important - it can be a cause
@@ -559,12 +559,12 @@ next section.</p>
 <p>Now, if we need to add, remove, or modify a team member, we only need
 to update the list in <code>_config.yml</code> without editing the
 individual pages of our site.</p>
-<div id="challenge1" class="callout challenge">
+<div id="exercise-personnel-changes" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-personnel-changes" class="callout-inner">
-<h3 class="callout-title">Exercise: Personnel Changes<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Exercise: Personnel Changes<a class="anchor" aria-label="anchor" href="#exercise-personnel-changes"></a>
 </h3>
 <div class="callout-content">
 <p>Your project team has changed. The team lead has left and in her
@@ -676,12 +676,12 @@ its contents. In this case, we need to move all our blog post files into
 a <code>_blogposts</code> folder.</p>
 <p>Once we have done that, we can check that the collection has been
 created correctly by trying to use it in a page.</p>
-<div id="callout3" class="callout callout">
+<div id="why-output-true" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="why-output-true" class="callout-inner">
-<h3 class="callout-title">Why <code>output: true</code>?<a class="anchor" aria-label="anchor" href="#callout3"></a>
+<h3 class="callout-title">Why <code>output: true</code>?<a class="anchor" aria-label="anchor" href="#why-output-true"></a>
 </h3>
 <div class="callout-content">
 <p>When creating our <code>blogposts</code> collection in
@@ -767,12 +767,12 @@ reuse the <code>assign</code> instruction we used above:</p>
 [<code>group_by</code>][liquid-group-by], which can be used to group the
 values by a particular field, and [<code>sample</code>][liquid-sample],
 which returns a random sample of the values in the list.</p>
-<div id="challenge2" class="callout challenge">
+<div id="exercise-adding-the-post-author" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-adding-the-post-author" class="callout-inner">
-<h3 class="callout-title">Exercise: Adding the Post Author<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Exercise: Adding the Post Author<a class="anchor" aria-label="anchor" href="#exercise-adding-the-post-author"></a>
 </h3>
 <div class="callout-content">
 <p>Extend the example above to also state the name of the author next to
@@ -796,12 +796,12 @@ each post in the list.</p>
 </div>
 </div>
 </div>
-<div id="challenge3" class="callout challenge">
+<div id="exercise-reusable-post-list" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-reusable-post-list" class="callout-inner">
-<h3 class="callout-title">Exercise: Reusable Post List<a class="anchor" aria-label="anchor" href="#challenge3"></a>
+<h3 class="callout-title">Exercise: Reusable Post List<a class="anchor" aria-label="anchor" href="#exercise-reusable-post-list"></a>
 </h3>
 <div class="callout-content">
 <p>A list of blog posts is exactly the kind of component we are likely
@@ -840,12 +840,12 @@ following content:</p>
 </div>
 </div>
 </div>
-<div id="challenge4" class="callout challenge">
+<div id="exercise-extend-the-collection" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-extend-the-collection" class="callout-inner">
-<h3 class="callout-title">Exercise: Extend the Collection<a class="anchor" aria-label="anchor" href="#challenge4"></a>
+<h3 class="callout-title">Exercise: Extend the Collection<a class="anchor" aria-label="anchor" href="#exercise-extend-the-collection"></a>
 </h3>
 <div class="callout-content">
 <p>Create another blog post and add it to the <code>blogposts</code>
@@ -929,12 +929,12 @@ these internal links:</p>
 <pre class="source"><code>{% raw %}{{ site.baseurl }}{% link _posts/2019-09-04-rise-and-shine.md %}{% endraw %}</code></pre>
 <p>This will ensure that the links within your site work correctly in
 the local version of the site as well as on GitHub Pages.</p>
-<div id="callout4" class="callout callout">
+<div id="comments-on-a-static-blog" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="comments-on-a-static-blog" class="callout-inner">
-<h3 class="callout-title">Comments on a Static Blog<a class="anchor" aria-label="anchor" href="#callout4"></a>
+<h3 class="callout-title">Comments on a Static Blog<a class="anchor" aria-label="anchor" href="#comments-on-a-static-blog"></a>
 </h3>
 <div class="callout-content">
 <p>When setting up a blog on a website, it is common to want to include
@@ -1019,7 +1019,7 @@ populated in a corresponding folder.</li>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -1043,7 +1043,7 @@ populated in a corresponding folder.</li>
   "identifier": "https://preview.carpentries.org/jekyll-pages-novice/instructor/arrays.html",
   "dateCreated": "2022-11-15",
   "dateModified": "2022-11-15",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>

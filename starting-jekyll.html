@@ -360,12 +360,12 @@ called <a href="https://shopify.github.io/liquid/basics/introduction/" class="ex
 directory. Parameters configured in <code>_config.yml</code> are global
 or site-wide - that means they are accessible in every page of your
 website.</p>
-<div id="callout1" class="callout callout">
+<div id="yaml" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="yaml" class="callout-inner">
-<h3 class="callout-title">YAML<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">YAML<a class="anchor" aria-label="anchor" href="#yaml"></a>
 </h3>
 <div class="callout-content">
 <p><a href="https://yaml.org/" class="external-link">YAML</a> is a human-readable
@@ -395,12 +395,12 @@ above would be accessed as <code>site.email</code>.</p>
 <p>In order to access the parameter’s value within a page, you use
 Liquid’s notation to output content by surrounding a variable in curly
 braces as <code>{% raw %}{{ variable }}{% endraw %}</code>.</p>
-<div id="callout2" class="callout callout">
+<div id="predefined-global-parameters" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="predefined-global-parameters" class="callout-inner">
-<h3 class="callout-title">Predefined Global Parameters<a class="anchor" aria-label="anchor" href="#callout2"></a>
+<h3 class="callout-title">Predefined Global Parameters<a class="anchor" aria-label="anchor" href="#predefined-global-parameters"></a>
 </h3>
 <div class="callout-content">
 <p>In addition to the global parameters you define, Jekyll also makes a
@@ -460,13 +460,13 @@ parameters like this:</li>
 files in GitHub (they will be displayed as text
 <code>{% raw %}{{ site.PARAMETER_NAME }}{% endraw %}</code> rather than
 the parameter’s rendered value) but will in the website.</p></li>
-</ol><div id="challenge1" class="callout challenge">
+</ol><div id="exercise-create-a-global-twitter-parameter" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-create-a-global-twitter-parameter" class="callout-inner">
 <h3 class="callout-title">Exercise: Create a Global Twitter
-Parameter<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+Parameter<a class="anchor" aria-label="anchor" href="#exercise-create-a-global-twitter-parameter"></a>
 </h3>
 <div class="callout-content">
 <p>In <code>about.md</code> we have a Twitter URL under the ‘Contact us’
@@ -527,12 +527,12 @@ should you need to.</li>
 </div>
 </div>
 </div>
-<div id="callout3" class="callout callout">
+<div id="reuse-and-reduce" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="reuse-and-reduce" class="callout-inner">
-<h3 class="callout-title">Reuse and Reduce<a class="anchor" aria-label="anchor" href="#callout3"></a>
+<h3 class="callout-title">Reuse and Reduce<a class="anchor" aria-label="anchor" href="#reuse-and-reduce"></a>
 </h3>
 <div class="callout-content">
 <p>Jekyll’s global parameters are a useful way to keep all your
@@ -550,12 +550,12 @@ write.</p>
 <hr class="half-width"><p>So far we have seen how to successfully use Jekyll to produce a
 website. There are however some situations where Jekyll may fail to do
 so either due to a typo or missing information.</p>
-<div id="challenge2" class="callout challenge">
+<div id="exercise-troubleshooting-jekyll" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-troubleshooting-jekyll" class="callout-inner">
-<h3 class="callout-title">Exercise: Troubleshooting Jekyll<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Exercise: Troubleshooting Jekyll<a class="anchor" aria-label="anchor" href="#exercise-troubleshooting-jekyll"></a>
 </h3>
 <div class="callout-content">
 <p>This exercise will help you recognise what common mistakes look like
@@ -611,12 +611,12 @@ us the information we were missing.</p>
 5 of the <code>_config.yml</code> file. This matches the line where we
 deleted the <code>"</code>. Since this typo prevents Jekyll from
 building the page, the process cannot continue.</p>
-<div id="callout4" class="callout callout">
+<div id="failure-will-not-remove-your-website" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="failure-will-not-remove-your-website" class="callout-inner">
-<h3 class="callout-title">Failure Will Not Remove Your Website<a class="anchor" aria-label="anchor" href="#callout4"></a>
+<h3 class="callout-title">Failure Will Not Remove Your Website<a class="anchor" aria-label="anchor" href="#failure-will-not-remove-your-website"></a>
 </h3>
 <div class="callout-content">
 <p>Given the failure you may be wondering what happened to the website?
@@ -653,12 +653,12 @@ page by including it in a page header and delimiting the header with
 triple-dashed lines <code>---</code>. These headers are called <em>front
 matter</em> and are used to set variables and metadata on individual
 pages in your Jekyll site.</p>
-<div id="callout5" class="callout callout">
+<div id="front-matter" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="front-matter" class="callout-inner">
-<h3 class="callout-title">Front matter<a class="anchor" aria-label="anchor" href="#callout5"></a>
+<h3 class="callout-title">Front matter<a class="anchor" aria-label="anchor" href="#front-matter"></a>
 </h3>
 <div class="callout-content">
 <p>From <a href="https://jekyllrb.com/docs/front-matter/" class="external-link">Jekyll’s
@@ -672,13 +672,13 @@ lines.</p>
 </div>
 </div>
 </div>
-<div id="callout6" class="callout callout">
+<div id="global-and-local-parameters-are-case-sensitive" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="global-and-local-parameters-are-case-sensitive" class="callout-inner">
 <h3 class="callout-title">Global and Local Parameters Are Case
-Sensitive<a class="anchor" aria-label="anchor" href="#callout6"></a>
+Sensitive<a class="anchor" aria-label="anchor" href="#global-and-local-parameters-are-case-sensitive"></a>
 </h3>
 <div class="callout-content">
 <p>It is important to note that the parameters used in the sites are
@@ -707,12 +707,12 @@ you to access using Liquid’s tags
 Note that these variables are only accessible on that page. You will get
 an error if you try to reference a <code>page.variable</code> that was
 defined on a different page.</p>
-<div id="challenge3" class="callout challenge">
+<div id="exercise-practice-with-local-variables" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-practice-with-local-variables" class="callout-inner">
-<h3 class="callout-title">Exercise: Practice With Local Variables<a class="anchor" aria-label="anchor" href="#challenge3"></a>
+<h3 class="callout-title">Exercise: Practice With Local Variables<a class="anchor" aria-label="anchor" href="#exercise-practice-with-local-variables"></a>
 </h3>
 <div class="callout-content">
 <p>Let’s practice making and using local variables. Think of a local
@@ -765,12 +765,12 @@ page and is local to <code>index.md</code>.</p>
 </div>
 </div>
 </div>
-<div id="challenge4" class="callout challenge">
+<div id="exercise-practice-with-troubleshooting" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-practice-with-troubleshooting" class="callout-inner">
-<h3 class="callout-title">Exercise: Practice With Troubleshooting<a class="anchor" aria-label="anchor" href="#challenge4"></a>
+<h3 class="callout-title">Exercise: Practice With Troubleshooting<a class="anchor" aria-label="anchor" href="#exercise-practice-with-troubleshooting"></a>
 </h3>
 <div class="callout-content">
 <p>Sometimes typos happen and can make your website change in surprising
@@ -837,13 +837,13 @@ variable link we created.</li>
 </div>
 </div>
 </div>
-<div id="discussion1" class="callout discussion">
+<div id="exercise-practice-with-troubleshooting" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="exercise-practice-with-troubleshooting" class="callout-inner">
 <h3 class="callout-title">Exercise: Practice With Troubleshooting<em>
-(continued)</em><a class="anchor" aria-label="anchor" href="#discussion1"></a>
+(continued)</em><a class="anchor" aria-label="anchor" href="#exercise-practice-with-troubleshooting"></a>
 </h3>
 <div class="callout-content">
 <p>Note: Be sure to fix any errors you intentionally introduced in your
@@ -901,7 +901,7 @@ defined (and any pages that include this page)</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -925,7 +925,7 @@ defined (and any pages that include this page)</li>
   "identifier": "https://preview.carpentries.org/jekyll-pages-novice/starting-jekyll.html",
   "dateCreated": "2022-11-15",
   "dateModified": "2022-11-15",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>

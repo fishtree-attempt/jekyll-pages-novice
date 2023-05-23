@@ -399,12 +399,12 @@ and the navigational links appear twice!</p>
 <figure><img src="../fig/layouts_double_navigation.png" class="image-with-shadow figure mx-auto d-block" alt="A page displaying the navigation section twice." width="800"></figure><p>The duplication is happening because the
 <code>{% raw %}{% include navigation.html %}{% endraw %}</code> tag is
 still present in <code>index.md</code>.</p>
-<div id="discussion1" class="callout discussion">
+<div id="exercise-cleaning-up" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="exercise-cleaning-up" class="callout-inner">
-<h3 class="callout-title">Exercise: Cleaning Up<a class="anchor" aria-label="anchor" href="#discussion1"></a>
+<h3 class="callout-title">Exercise: Cleaning Up<a class="anchor" aria-label="anchor" href="#exercise-cleaning-up"></a>
 </h3>
 <div class="callout-content">
 <p>Remove the include tag for navigation links from all the pages of
@@ -417,12 +417,12 @@ your site (e.g. <code>about.md</code>), and set every page to use the
 to add another element to our layout. In a similar manner to the
 navigation links appearing on every page, we may want a common footer to
 appear too.</p>
-<div id="challenge1" class="callout challenge">
+<div id="exercise-expanding-the-layout" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-expanding-the-layout" class="callout-inner">
-<h3 class="callout-title">Exercise: Expanding the Layout<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Exercise: Expanding the Layout<a class="anchor" aria-label="anchor" href="#exercise-expanding-the-layout"></a>
 </h3>
 <div class="callout-content">
 <p>Expand the layout we have just created to include a footer element at
@@ -489,13 +489,13 @@ W3Schools page to learn more][w3-viewport].)</p>
 <p>It is common practice to define the structural HTML elements of your
 site’s pages inside a <code>_layouts/default.html</code> file. This file
 defines the bare minimum layout your pages should have.</p>
-<div id="challenge2" class="callout challenge">
+<div id="exercise-adding-html-structural-elements-to-default-layout" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-adding-html-structural-elements-to-default-layout" class="callout-inner">
 <h3 class="callout-title">Exercise: Adding HTML Structural Elements to
-Default Layout<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+Default Layout<a class="anchor" aria-label="anchor" href="#exercise-adding-html-structural-elements-to-default-layout"></a>
 </h3>
 <div class="callout-content">
 <p>Modify the default layout file <code>_layouts/default.html</code>
@@ -639,12 +639,12 @@ like:</p>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>{{ content }}{% endraw %}</span></code></pre>
 </div>
-<div id="callout1" class="callout callout">
+<div id="defining-a-layout-for-a-layout" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="defining-a-layout-for-a-layout" class="callout-inner">
-<h3 class="callout-title">Defining a Layout for a Layout<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">Defining a Layout for a Layout<a class="anchor" aria-label="anchor" href="#defining-a-layout-for-a-layout"></a>
 </h3>
 <div class="callout-content">
 <p>Note how layouts can be applied not only to regular pages but also to
@@ -665,13 +665,13 @@ minimum within our repository. Whenever we want to update something
 about the styling or structure of our site, we should only need to make
 that change in a single file and let it propagate to all the relevant
 pages.</p>
-<div id="callout2" class="callout callout">
+<div id="we-cant-include-link-references-in-the-layout" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="we-cant-include-link-references-in-the-layout" class="callout-inner">
 <h3 class="callout-title">We Can’t Include Link References in the
-Layout<a class="anchor" aria-label="anchor" href="#callout2"></a>
+Layout<a class="anchor" aria-label="anchor" href="#we-cant-include-link-references-in-the-layout"></a>
 </h3>
 <div class="callout-content">
 <p>In the previous section, <a href="%7B%7B%20relative_root_path%20%7D%7D%7B%%20link%20_episodes/includes.md%20%%7D#reusing-link-references">we
@@ -760,7 +760,7 @@ ones</li>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -784,7 +784,7 @@ ones</li>
   "identifier": "https://preview.carpentries.org/jekyll-pages-novice/instructor/layouts.html",
   "dateCreated": "2022-11-15",
   "dateModified": "2022-11-15",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>
