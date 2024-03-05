@@ -371,13 +371,12 @@ called <a href="https://shopify.github.io/liquid/basics/introduction/" class="ex
 directory. Parameters configured in <code>_config.yml</code> are global
 or site-wide - that means they are accessible in every page of your
 website.</p>
-<div id="yaml" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="yaml" class="callout-inner">
-<h3 class="callout-title">YAML<a class="anchor" aria-label="anchor" href="#yaml"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="yaml">YAML<a class="anchor" aria-label="anchor" href="#yaml"></a></h3>
 <div class="callout-content">
 <p><a href="https://yaml.org/" class="external-link">YAML</a> is a human-readable
 data-serialization language. It is commonly used for configuration files
@@ -394,9 +393,9 @@ it as:</p></li>
 </ol><div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"This research project develops training materials for reseachers wanting to learn to build project</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="st">websites in GitHub with GitHub Pages."</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">email</span><span class="kw">:</span><span class="at"> </span><span class="st">"team@carpentries.org"</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"This research project develops training materials for reseachers wanting to learn to build project</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="st">websites in GitHub with GitHub Pages."</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">email</span><span class="kw">:</span><span class="at"> </span><span class="st">"team@carpentries.org"</span></span></code></pre>
 </div>
 <ol start="3" style="list-style-type: decimal"><li>Commit your changes.</li>
 </ol><p>Global configuration settings from <code>_config.yml</code> are made
@@ -406,13 +405,12 @@ above would be accessed as <code>site.email</code>.</p>
 <p>In order to access the parameter’s value within a page, you use
 Liquid’s notation to output content by surrounding a variable in curly
 braces as <code>{% raw %}{{ variable }}{% endraw %}</code>.</p>
-<div id="predefined-global-parameters" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="predefined-global-parameters" class="callout-inner">
-<h3 class="callout-title">Predefined Global Parameters<a class="anchor" aria-label="anchor" href="#predefined-global-parameters"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="predefined-global-parameters">Predefined Global Parameters<a class="anchor" aria-label="anchor" href="#predefined-global-parameters"></a></h3>
 <div class="callout-content">
 <p>In addition to the global parameters you define, Jekyll also makes a
 number of <a href="https://jekyllrb.com/docs/variables#site-variables" class="external-link">useful
@@ -429,14 +427,14 @@ parameters like this:</li>
 </ol><div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Building Websites in GitHub</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Description</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>{% raw %}{{ site.description }}{% endraw %}</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>More details about the project are available from the <span class="co">[</span><span class="ot">About page</span><span class="co">](about)</span>.</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>Have any questions about what we do? <span class="co">[</span><span class="ot">We'd love to hear from you!</span><span class="co">]({% raw %}mailto:{{ site.email }}{% endraw %})</span></span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu"># Building Websites in GitHub</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="fu">## Description</span></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>{% raw %}{{ site.description }}{% endraw %}</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>More details about the project are available from the <span class="co">[</span><span class="ot">About page</span><span class="co">](about)</span>.</span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a>Have any questions about what we do? <span class="co">[</span><span class="ot">We'd love to hear from you!</span><span class="co">]({% raw %}mailto:{{ site.email }}{% endraw %})</span></span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal"><li>We can use the same parameter in different pages. Let’s reuse
 <code>{% raw %}{{ site.description }}{% endraw %}</code> and
@@ -445,26 +443,26 @@ parameters like this:</li>
 </ol><div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># About</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Project</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>{% raw %}{{ site.description }}{% endraw %}</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Funders</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cite us</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>You can cite the project as:</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;    *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contact us</span></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Email: <span class="co">[</span><span class="ot">{% raw %}{{ site.email }}{% endraw %}</span><span class="co">](mailto:{% raw %}{{ site.email }}{% endraw %})</span></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Twitter: <span class="co">[</span><span class="ot">@thecarpentries</span><span class="co">](https://twitter.com/thecarpentries)</span></span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu"># About</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="fu">## Project</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>{% raw %}{{ site.description }}{% endraw %}</span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="fu">## Funders</span></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.</span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="fu">## Cite us</span></span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a>You can cite the project as:</span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="at">&gt;    *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*</span></span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a><span class="fu">## Contact us</span></span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" tabindex="-1"></a><span class="ss">- </span>Email: <span class="co">[</span><span class="ot">{% raw %}{{ site.email }}{% endraw %}</span><span class="co">](mailto:{% raw %}{{ site.email }}{% endraw %})</span></span>
+<span id="cb3-20"><a href="#cb3-20" tabindex="-1"></a><span class="ss">- </span>Twitter: <span class="co">[</span><span class="ot">@thecarpentries</span><span class="co">](https://twitter.com/thecarpentries)</span></span></code></pre>
 </div>
 <ol start="3" style="list-style-type: decimal"><li><p>Go to your website to see the changes.</p></li>
 <li><p>Note that site parameters will not render nicely when viewing
@@ -493,41 +491,41 @@ URL as a global parameter.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Add parameter twitter to <code>_config.yml</code>:</li>
 </ol><div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"This research project develops training materials for reseachers wanting to learn to build project</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="st">websites in GitHub with GitHub Pages."</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">email</span><span class="kw">:</span><span class="at"> </span><span class="st">"team@carpentries.org"</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">twitter</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://twitter.com/thecarpentries"</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"This research project develops training materials for reseachers wanting to learn to build project</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="st">websites in GitHub with GitHub Pages."</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="fu">email</span><span class="kw">:</span><span class="at"> </span><span class="st">"team@carpentries.org"</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="fu">twitter</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://twitter.com/thecarpentries"</span></span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal"><li>Make use of the twitter parameter in <code>about.md</code>:</li>
 </ol><div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># About</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Project</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>{% raw %}{{ site.description }}{% endraw %}</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Funders</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cite us</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>You can cite the project as:</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*</span></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contact us</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Email: <span class="co">[</span><span class="ot">{% raw %}{{ site.email }}{% endraw %}</span><span class="co">](mailto:{% raw %}{{ site.email }}{% endraw %})</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Twitter: <span class="co">[</span><span class="ot">{% raw %}{{ site.twitter }}{% endraw %}</span><span class="co">]({% raw %}{{ site.twitter }}{% endraw %})</span></span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu"># About</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="fu">## Project</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>{% raw %}{{ site.description }}{% endraw %}</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="fu">## Funders</span></span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a>We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.</span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a><span class="fu">## Cite us</span></span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a>You can cite the project as:</span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a><span class="at">&gt; *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*</span></span>
+<span id="cb5-16"><a href="#cb5-16" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="#cb5-17" tabindex="-1"></a><span class="fu">## Contact us</span></span>
+<span id="cb5-18"><a href="#cb5-18" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" tabindex="-1"></a><span class="ss">- </span>Email: <span class="co">[</span><span class="ot">{% raw %}{{ site.email }}{% endraw %}</span><span class="co">](mailto:{% raw %}{{ site.email }}{% endraw %})</span></span>
+<span id="cb5-20"><a href="#cb5-20" tabindex="-1"></a><span class="ss">- </span>Twitter: <span class="co">[</span><span class="ot">{% raw %}{{ site.twitter }}{% endraw %}</span><span class="co">]({% raw %}{{ site.twitter }}{% endraw %})</span></span></code></pre>
 </div>
 <ol start="3" style="list-style-type: decimal"><li>Note that you should not see any changes to your website really.
 However, you can now access your Twitter URL from any website page,
@@ -536,13 +534,12 @@ should you need to.</li>
 </div>
 </div>
 </div>
-<div id="reuse-and-reduce" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="reuse-and-reduce" class="callout-inner">
-<h3 class="callout-title">Reuse and Reduce<a class="anchor" aria-label="anchor" href="#reuse-and-reduce"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="reuse-and-reduce">Reuse and Reduce<a class="anchor" aria-label="anchor" href="#reuse-and-reduce"></a></h3>
 <div class="callout-content">
 <p>Jekyll’s global parameters are a useful way to keep all your
 site-wide configuration in a single place (even if you only use them
@@ -579,17 +576,17 @@ when working with these elements of a Jekyll website.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>For instance, a missing closing quote <code>"</code> in the
 <code>twitter</code> variable.</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"This research project develops training materials for reseachers wanting to learn to build project</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="st">websites in GitHub with GitHub Pages."</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">email</span><span class="kw">:</span><span class="at"> </span><span class="st">"team@carpentries.org"</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">twitter</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://twitter.com/thecarpentries</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"This research project develops training materials for reseachers wanting to learn to build project</span></span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="st">websites in GitHub with GitHub Pages."</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="fu">email</span><span class="kw">:</span><span class="at"> </span><span class="st">"team@carpentries.org"</span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="fu">twitter</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://twitter.com/thecarpentries</span></span></code></pre>
 </div>
 <p>If you navigate your GitHub repository you would be able to see
 something break in <code>about.md</code> where we use
@@ -618,13 +615,12 @@ us the information we were missing.</p>
 5 of the <code>_config.yml</code> file. This matches the line where we
 deleted the <code>"</code>. Since this typo prevents Jekyll from
 building the page, the process cannot continue.</p>
-<div id="failure-will-not-remove-your-website" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="failure-will-not-remove-your-website" class="callout-inner">
-<h3 class="callout-title">Failure Will Not Remove Your Website<a class="anchor" aria-label="anchor" href="#failure-will-not-remove-your-website"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="failure-will-not-remove-your-website">Failure Will Not Remove Your Website<a class="anchor" aria-label="anchor" href="#failure-will-not-remove-your-website"></a></h3>
 <div class="callout-content">
 <p>Given the failure you may be wondering what happened to the website?
 If you visit the address you will find that the website is still be
@@ -639,10 +635,10 @@ fixed and a new build is completed successfully.</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"This research project develops training materials for reseachers wanting to learn to build project</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="st">websites in GitHub with GitHub Pages."</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">email</span><span class="kw">:</span><span class="at"> </span><span class="st">"team@carpentries.org"</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">twitter</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://twitter.com/thecarpentries"</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"This research project develops training materials for reseachers wanting to learn to build project</span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="st">websites in GitHub with GitHub Pages."</span></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="fu">email</span><span class="kw">:</span><span class="at"> </span><span class="st">"team@carpentries.org"</span></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="fu">twitter</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://twitter.com/thecarpentries"</span></span></code></pre>
 </div>
 <p>After a few seconds we should see a green checkmark again and our
 website will be updated.</p>
@@ -660,13 +656,12 @@ page by including it in a page header and delimiting the header with
 triple-dashed lines <code>---</code>. These headers are called <em>front
 matter</em> and are used to set variables and metadata on individual
 pages in your Jekyll site.</p>
-<div id="front-matter" class="callout callout">
+<div id="callout5" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="front-matter" class="callout-inner">
-<h3 class="callout-title">Front matter<a class="anchor" aria-label="anchor" href="#front-matter"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="front-matter">Front matter<a class="anchor" aria-label="anchor" href="#front-matter"></a></h3>
 <div class="callout-content">
 <p>From <a href="https://jekyllrb.com/docs/front-matter/" class="external-link">Jekyll’s
 website</a>:</p>
@@ -679,14 +674,13 @@ lines.</p>
 </div>
 </div>
 </div>
-<div id="global-and-local-parameters-are-case-sensitive" class="callout callout">
+<div id="callout6" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="global-and-local-parameters-are-case-sensitive" class="callout-inner">
-<h3 class="callout-title">Global and Local Parameters Are Case
-Sensitive<a class="anchor" aria-label="anchor" href="#global-and-local-parameters-are-case-sensitive"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="global-and-local-parameters-are-case-sensitive">Global and Local Parameters Are Case
+Sensitive<a class="anchor" aria-label="anchor" href="#global-and-local-parameters-are-case-sensitive"></a></h3>
 <div class="callout-content">
 <p>It is important to note that the parameters used in the sites are
 case sensitive. By convention, usually they are all lowercase
@@ -698,11 +692,11 @@ characters.</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">layout</span><span class="kw">:</span><span class="at"> post</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My first blog post"</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Danger Mouse"</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">layout</span><span class="kw">:</span><span class="at"> post</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My first blog post"</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Danger Mouse"</span></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="pp">---</span></span></code></pre>
 </div>
 <p>Between these triple-dashed lines, you can overwrite predefined
 variables (like <code>page.layout</code> or <code>page.title</code>) or
@@ -738,7 +732,7 @@ variable? Where did you add the front matter in your
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Create a YAML header at the very top of <code>index.md</code> and add
 the <code>lesson-example</code> variable in between the triple-dash
@@ -749,20 +743,20 @@ Your file should now look like:</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="an">lesson-example:</span><span class="co"> "https://carpentries.github.io/lesson-example/"</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Building Websites in GitHub</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Description</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>{% raw %}{{ site.description }}{% endraw %}</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>More details about the project are available from the <span class="co">[</span><span class="ot">About page</span><span class="co">](about)</span>.</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>See some <span class="co">[</span><span class="ot">examples of our work</span><span class="co">]({% raw %}{{{% endraw %} page.lesson-example {% raw %}}}{% endraw %})</span>.</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>Have any questions about what we do? <span class="co">[</span><span class="ot">We'd love to hear from you!</span><span class="co">]({% raw %}mailto:{{ site.email }}{% endraw %})</span></span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="an">lesson-example:</span><span class="co"> "https://carpentries.github.io/lesson-example/"</span></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="fu"># Building Websites in GitHub</span></span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a><span class="fu">## Description</span></span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>{% raw %}{{ site.description }}{% endraw %}</span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a>More details about the project are available from the <span class="co">[</span><span class="ot">About page</span><span class="co">](about)</span>.</span>
+<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a>See some <span class="co">[</span><span class="ot">examples of our work</span><span class="co">]({% raw %}{{{% endraw %} page.lesson-example {% raw %}}}{% endraw %})</span>.</span>
+<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a></span>
+<span id="cb9-14"><a href="#cb9-14" tabindex="-1"></a>Have any questions about what we do? <span class="co">[</span><span class="ot">We'd love to hear from you!</span><span class="co">]({% raw %}mailto:{{ site.email }}{% endraw %})</span></span></code></pre>
 </div>
 <p>Note that this variable is not accessible from <code>about.md</code>
 page and is local to <code>index.md</code>.</p>
@@ -797,44 +791,44 @@ page</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>The place where you used the undefined variable is blank but
 otherwise no error. Example:</li>
 </ol><div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>Hi! {% raw %}{{ site.greeting }}{% endraw %}. What have you been up to?</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>Hi! {% raw %}{{ site.greeting }}{% endraw %}. What have you been up to?</span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal"><li>The header shows somewhat in the file and the variable that was
 defined goes to the index page intead of the link we set.</li>
 </ol><div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="an">lesson-example:</span><span class="co"> "https://carpentries.github.io/lesson-example/"</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="an">Examples of our work can be found at:</span><span class="co"> {% raw %}{{ page.lesson-example }}{% endraw %}</span></span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="an">lesson-example:</span><span class="co"> "https://carpentries.github.io/lesson-example/"</span></span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a><span class="an">Examples of our work can be found at:</span><span class="co"> {% raw %}{{ page.lesson-example }}{% endraw %}</span></span></code></pre>
 </div>
 <ol start="3" style="list-style-type: decimal"><li>This doesn’t seem to affect our page but can often make more complex
 pages break.</li>
 </ol><div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="an">lesson-example:</span><span class="co"> "https://carpentries.github.io/lesson-example/"</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>Examples of our work can be found at: {% raw %}{{ page.lesson-example }}{% endraw %}</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="an">lesson-example:</span><span class="co"> "https://carpentries.github.io/lesson-example/"</span></span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a>Examples of our work can be found at: {% raw %}{{ page.lesson-example }}{% endraw %}</span></code></pre>
 </div>
 <ol start="4" style="list-style-type: decimal"><li>This also makes the header somewhat show in the page and breaks the
 variable link we created.</li>
 </ol><div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="an">Examples of our work can be found at:</span><span class="co"> {% raw %}{{ page.lesson-example }}{% endraw %}</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>lesson-example: "https://carpentries.github.io/lesson-example/"</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>---</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="an">Examples of our work can be found at:</span><span class="co"> {% raw %}{{ page.lesson-example }}{% endraw %}</span></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>---</span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>lesson-example: "https://carpentries.github.io/lesson-example/"</span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a>---</span></code></pre>
 </div>
 </div>
 </div>
@@ -932,7 +926,7 @@ defined (and any pages that include this page)</li>
   "identifier": "https://preview.carpentries.org/jekyll-pages-novice/instructor/starting-jekyll.html",
   "dateCreated": "2022-11-15",
   "dateModified": "2022-11-15",
-  "datePublished": "2024-02-27"
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
