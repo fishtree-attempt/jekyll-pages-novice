@@ -371,12 +371,13 @@ called <a href="https://shopify.github.io/liquid/basics/introduction/" class="ex
 directory. Parameters configured in <code>_config.yml</code> are global
 or site-wide - that means they are accessible in every page of your
 website.</p>
-<div id="callout1" class="callout">
+<div id="yaml" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="yaml">YAML<a class="anchor" aria-label="anchor" href="#yaml"></a></h3>
+<div id="yaml" class="callout-inner">
+<h3 class="callout-title">YAML<a class="anchor" aria-label="anchor" href="#yaml"></a>
+</h3>
 <div class="callout-content">
 <p><a href="https://yaml.org/" class="external-link">YAML</a> is a human-readable
 data-serialization language. It is commonly used for configuration files
@@ -405,12 +406,13 @@ above would be accessed as <code>site.email</code>.</p>
 <p>In order to access the parameter’s value within a page, you use
 Liquid’s notation to output content by surrounding a variable in curly
 braces as <code>{% raw %}{{ variable }}{% endraw %}</code>.</p>
-<div id="callout2" class="callout">
+<div id="predefined-global-parameters" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="predefined-global-parameters">Predefined Global Parameters<a class="anchor" aria-label="anchor" href="#predefined-global-parameters"></a></h3>
+<div id="predefined-global-parameters" class="callout-inner">
+<h3 class="callout-title">Predefined Global Parameters<a class="anchor" aria-label="anchor" href="#predefined-global-parameters"></a>
+</h3>
 <div class="callout-content">
 <p>In addition to the global parameters you define, Jekyll also makes a
 number of <a href="https://jekyllrb.com/docs/variables#site-variables" class="external-link">useful
@@ -491,7 +493,7 @@ URL as a global parameter.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Add parameter twitter to <code>_config.yml</code>:</li>
 </ol><div class="codewrapper sourceCode" id="cb4">
@@ -534,12 +536,13 @@ should you need to.</li>
 </div>
 </div>
 </div>
-<div id="callout3" class="callout">
+<div id="reuse-and-reduce" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="reuse-and-reduce">Reuse and Reduce<a class="anchor" aria-label="anchor" href="#reuse-and-reduce"></a></h3>
+<div id="reuse-and-reduce" class="callout-inner">
+<h3 class="callout-title">Reuse and Reduce<a class="anchor" aria-label="anchor" href="#reuse-and-reduce"></a>
+</h3>
 <div class="callout-content">
 <p>Jekyll’s global parameters are a useful way to keep all your
 site-wide configuration in a single place (even if you only use them
@@ -576,7 +579,7 @@ when working with these elements of a Jekyll website.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>For instance, a missing closing quote <code>"</code> in the
 <code>twitter</code> variable.</p>
@@ -615,12 +618,13 @@ us the information we were missing.</p>
 5 of the <code>_config.yml</code> file. This matches the line where we
 deleted the <code>"</code>. Since this typo prevents Jekyll from
 building the page, the process cannot continue.</p>
-<div id="callout4" class="callout">
+<div id="failure-will-not-remove-your-website" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="failure-will-not-remove-your-website">Failure Will Not Remove Your Website<a class="anchor" aria-label="anchor" href="#failure-will-not-remove-your-website"></a></h3>
+<div id="failure-will-not-remove-your-website" class="callout-inner">
+<h3 class="callout-title">Failure Will Not Remove Your Website<a class="anchor" aria-label="anchor" href="#failure-will-not-remove-your-website"></a>
+</h3>
 <div class="callout-content">
 <p>Given the failure you may be wondering what happened to the website?
 If you visit the address you will find that the website is still be
@@ -656,12 +660,13 @@ page by including it in a page header and delimiting the header with
 triple-dashed lines <code>---</code>. These headers are called <em>front
 matter</em> and are used to set variables and metadata on individual
 pages in your Jekyll site.</p>
-<div id="callout5" class="callout">
+<div id="front-matter" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="front-matter">Front matter<a class="anchor" aria-label="anchor" href="#front-matter"></a></h3>
+<div id="front-matter" class="callout-inner">
+<h3 class="callout-title">Front matter<a class="anchor" aria-label="anchor" href="#front-matter"></a>
+</h3>
 <div class="callout-content">
 <p>From <a href="https://jekyllrb.com/docs/front-matter/" class="external-link">Jekyll’s
 website</a>:</p>
@@ -674,13 +679,14 @@ lines.</p>
 </div>
 </div>
 </div>
-<div id="callout6" class="callout">
+<div id="global-and-local-parameters-are-case-sensitive" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="global-and-local-parameters-are-case-sensitive">Global and Local Parameters Are Case
-Sensitive<a class="anchor" aria-label="anchor" href="#global-and-local-parameters-are-case-sensitive"></a></h3>
+<div id="global-and-local-parameters-are-case-sensitive" class="callout-inner">
+<h3 class="callout-title">Global and Local Parameters Are Case
+Sensitive<a class="anchor" aria-label="anchor" href="#global-and-local-parameters-are-case-sensitive"></a>
+</h3>
 <div class="callout-content">
 <p>It is important to note that the parameters used in the sites are
 case sensitive. By convention, usually they are all lowercase
@@ -732,7 +738,7 @@ variable? Where did you add the front matter in your
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Create a YAML header at the very top of <code>index.md</code> and add
 the <code>lesson-example</code> variable in between the triple-dash
@@ -791,7 +797,7 @@ page</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>The place where you used the undefined variable is blank but
 otherwise no error. Example:</li>
@@ -903,7 +909,7 @@ defined (and any pages that include this page)</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.2" class="external-link">sandpaper (0.16.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.4" class="external-link">pegboard (0.7.4)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.3" class="external-link">sandpaper (0.16.3)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.4" class="external-link">pegboard (0.7.4)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -926,7 +932,7 @@ defined (and any pages that include this page)</li>
   "identifier": "https://preview.carpentries.org/jekyll-pages-novice/instructor/starting-jekyll.html",
   "dateCreated": "2022-11-15",
   "dateModified": "2022-11-15",
-  "datePublished": "2024-03-12"
+  "datePublished": "2024-03-19"
 }
 
   </script><script>
